@@ -3,19 +3,27 @@ import { Image, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'reac
 import MapView, { Marker } from 'react-native-maps'
 import { createStackNavigator, createAppContainer } from "react-navigation-stack"
 
-export default class App extends Component<Props> {
+export default class App extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      username: '',
+    };
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Login</Text>
-        <TextInput style={styles.input} placeholder="Username"></TextInput>
+        <Text style={styles.welcome}>Drop a smile</Text>
+        <TextInput style={styles.input} placeholder="Username" onChangeText={(text) => this.setState({username: text})}></TextInput>
         <TextInput style={styles.input} placeholder="Password" secureTextEntry></TextInput>
         <View style={styles.btnContainer}>
-          <TouchableOpacity style={styles.userBtn} onPress={() => this.props.navigation.navigate('Admin')}>
+          <TouchableOpacity style={styles.userBtn} onPress={() => this.props.navigation.navigate(this.state.username)}>
             <Text style={styles.btnTxt}>Login</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.userBtn}>
-            <Text style={styles.btnTxt}>SignUp</Text>
+            <Text style={styles.btnTxt}>Register</Text>
           </TouchableOpacity>
         </View>
       </View>
