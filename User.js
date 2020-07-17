@@ -35,7 +35,7 @@ export default class App extends Component {
         {this.state.show ?
           <Marker
             coordinate={{ latitude: 25.7664362, longitude: -80.1915964 }}
-            title='John Doe'
+            title='John'
             description='Looking for a box of groceries'
           >
             <Emoji name="disappointed" style={{ fontSize: 35 }} />
