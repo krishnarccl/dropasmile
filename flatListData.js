@@ -1,9 +1,9 @@
 var flatListData = [
     {
         "key": "598a678278fee204ee51cd2c",
-        "name": "Shawn",   
+        "name": "John Doe",   
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Cornish_cream_tea_2.jpg",                    
-        "foodDescription": "Need food"
+        "foodDescription": "Looking for a box of groceries"
     },
     {
         "key": "598a684f78fee204ee51cd2f",
