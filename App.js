@@ -6,7 +6,7 @@ import { createAppContainer } from "react-navigation"
 import Login from './Login';
 import User from './User';
 import Admin from './Admin';
-import Smiles from './FlatListItem';
+import Smiles from './Smiles';
 
 export default class App extends React.Component {
   render() {
