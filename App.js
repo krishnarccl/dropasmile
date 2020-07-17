@@ -6,6 +6,7 @@ import { createAppContainer } from "react-navigation"
 import Login from './Login';
 import User from './User';
 import Admin from './Admin';
+import Smiles from './FlatListItem';
 
 export default class App extends React.Component {
   render() {
@@ -22,6 +23,9 @@ const AppNavigator = createStackNavigator({
   },
   Admin: {
     screen: Admin
+  },
+  Smiles: {
+    screen: Smiles
   }
 });
 
