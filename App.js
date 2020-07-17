@@ -21,7 +21,7 @@ const AppNavigator = createStackNavigator({
     screen: User
   },
   Admin: {
-    screen: User
+    screen: Admin
   }
 });
 

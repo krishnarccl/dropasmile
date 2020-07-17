@@ -11,7 +11,7 @@ export default class App extends Component<Props> {
         <TextInput style={styles.input} placeholder="Username"></TextInput>
         <TextInput style={styles.input} placeholder="Password" secureTextEntry></TextInput>
         <View style={styles.btnContainer}>
-          <TouchableOpacity style={styles.userBtn} onPress={() => this.props.navigation.navigate('User')}>
+          <TouchableOpacity style={styles.userBtn} onPress={() => this.props.navigation.navigate('Admin')}>
             <Text style={styles.btnTxt}>Login</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.userBtn}>
